@@ -18,10 +18,8 @@ def is_prime(num):
     for i in range(1, int(sqrt(abs(num))) + 1 ):
         if abs(num) % i == 0:
             n += 1
-    if n == 1 and num > 1:
-        return True
-    else:
-        return False
+    return n == 1 and num > 1 
+
 
     # Менять до сюда =) ---- ^^^^^ ----
 
