@@ -16,12 +16,12 @@ def is_prime(num):
     # Менять отсюда =) ---- vvvvv ----
     n = 0
     for i in range(1, int(sqrt(abs(num))) + 1 ):
-        if (abs(num) % i) == 0:
+        if abs(num) % i == 0:
             n += 1
-    if (n == 1) and (num > 1):
-        return (True)
+    if n == 1 and num > 1:
+        return True
     else:
-        return (False)
+        return False
 
     # Менять до сюда =) ---- ^^^^^ ----
 
