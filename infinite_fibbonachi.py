@@ -4,13 +4,14 @@ class Fib:
     class _Fib_iter:
         """Внутренний класс — итератор"""
         def __init__(self):
-            self.fibs = [1, 1]
+            self.fib_1 = 1
+            self.fib_2 = 1
         
         def __next__(self):
-            j = self.fibs[0]
-            h = self.fibs[1]
-            self.fibs[1] = j + h
-            self.fibs[0] = h
+            j = self.fib_1
+            h = self.fib_2
+            self.fib_2 = j + h
+            self.fib_1 = h
             return j
 
 
