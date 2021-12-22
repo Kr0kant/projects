@@ -4,18 +4,14 @@ class Fib:
     class _Fib_iter:
         """Внутренний класс — итератор"""
         def __init__(self):
-            self.i = 0
-            self.fibs = [1]
+            self.fibs = [1, 1]
         
         def __next__(self):
-            j = self.i
-            self.i += 1
-            if self.i == 1:
-                self.fibs.append(1)
-                return self.fibs [j]
-            else:
-                self.fibs.append(self.fibs[j-1]+self.fibs[j])
-                return self.fibs [j]
+            j = self.fibs[0]
+            h = self.fibs[1]
+            self.fibs[1] = j + h
+            self.fibs[0] = h
+            return j
 
 
     def __iter__(self):
@@ -26,5 +22,5 @@ f = Fib()
 
 for i in f:
     print(i)
-    if i>1000:
+    if i>10000:
         break
