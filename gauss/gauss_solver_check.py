@@ -1,5 +1,4 @@
-from gauss_solver import vgauss
-from matrix_generator import test_error
+from gauss_solver import vgauss, test_error
 from numpy import array
 
 a = array([
