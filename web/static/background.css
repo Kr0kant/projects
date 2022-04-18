@@ -1,0 +1,8 @@
+body{
+    background-image: url(background.png);
+    background-color: aliceblue;
+    background-attachment: scroll;
+    background-clip: content-box;
+    background-size: 100%;
+    font-family: "Lobster";
+}
