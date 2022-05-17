@@ -103,8 +103,8 @@ u = Universe2D(MODEL_G, COLLISION_COEFFICIENT, COLLISION_DISTANCE)
 
 bodies = [
     MaterialPoint(u, 50000., vec([  0.,   0.]), vec([ 0.,   0.])),
-    MaterialPoint(u,  10., vec([200.,   0.]), vec([ 0., -100.])),
-    MaterialPoint(u,  10., vec([  0., 100.]), vec([300.,   0.]))
+    MaterialPoint(u,  10., vec([75.,   0.]), vec([ 0., -25.])),
+    MaterialPoint(u,  10., vec([  0., 100.]), vec([200.,   0.]))
 ]
     
 steps = int(TIME_TO_MODEL / MODEL_DELTA_T)

@@ -3,7 +3,6 @@ from numpy.linalg import solve as solve_out_of_the_box
 from numpy.random import uniform
 from numpy import array, concatenate
 
-
 def vgauss(a, b):
     ab = concatenate((a, array([b]).T), axis=1)  # concatenate заодно и скопирует
     d = len(ab) # размер по старшему измерению
